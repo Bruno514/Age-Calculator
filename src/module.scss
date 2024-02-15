@@ -1,0 +1,46 @@
+@import "colors.scss";
+
+.date-inputs {
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 0;
+  flex: 0;
+  gap: 0.8rem;
+  max-width: 40rem;
+}
+
+.enter-button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 2rem 0 2rem 0;
+}
+
+.enter-button:after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 1px;
+  background: $neutral-light-grey;
+  content: "";
+  width: 100%;
+  display: block;
+}
+
+.results {
+  font-size: clamp(2rem, 16vw, 6.5rem);
+  font-weight: 800;
+  color: $neutral-off-black;
+  margin-top: 0;
+}
+
+.result-number {
+  color: $primary-purple;
+}
+
+@media screen and (min-width: 780px) {
+  .enter-button {
+    justify-content: flex-end;
+    margin: 0;
+  }
+}
