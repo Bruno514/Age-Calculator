@@ -1,5 +1,5 @@
-import { intervalToDuration } from "../node_modules/date-fns/intervalToDuration.mjs";
-import { getDaysInMonth } from "../node_modules/date-fns/getDaysInMonth.mjs";
+import { intervalToDuration, getDaysInMonth } from "date-fns"
+import './main.css'
 
 function isValidInput() {
   const day = document.getElementById("day").value;
